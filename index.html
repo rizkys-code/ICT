@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="registration-container">
+    <div class="logo">
+      <img src="lab-removebg-preview.png" alt="Logo" />
+    </div>
+    <h1>ICT LAB Assistant Attendance</h1>
+    <p>Already have an account? <a href="#">Log in</a></p>
+
+    <div class="social-buttons">
+      <button class="google-btn">Google</button>
+      <button class="facebook-btn">FaceBook</button>
+      <button class="email-btn">Email</button>
+    </div>
+
+    <p class="or">or register with</p>
+
+    <form id="registration-form">
+      <div class="form-group">
+        <label for="country-code">Country Code</label>
+        <select id="country-code">
+          <option value="+62">+62</option>
+          <option value="+1">+1</option>
+          <option value="+44">+44</option>
+          <!-- Tambahkan opsi lain jika diperlukan -->
+        </select>
+        <input
+          type="tel"
+          id="phone-number"
+          placeholder="Ex. 82189098"
+          required
+        />
+      </div>
+      <p class="otp-note">We will send an OTP code to the number you entered</p>
+      <button type="submit" class="register-btn">Register</button>
+    </form>
+
+    <p class="terms">
+      By Register I agree to the
+      <a href="#">Terms condition and privacy policy</a>
+    </p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
